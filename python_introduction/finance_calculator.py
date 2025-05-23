@@ -1,7 +1,7 @@
 monthlyIncome= int(input("Enter your monthly income: "))
 monthlyExpenses= int(input("Enter your total monthly expenses: "))
 
-monthlySavings = monthlyIncome - monthlyExpenses
+monthlySavings = int(monthlyIncome - monthlyExpenses)
 
 annualInterestRate =0.05
 projectedSavings = int( monthlySavings * 12 + (monthlySavings * 12 * annualInterestRate))
