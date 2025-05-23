@@ -4,4 +4,4 @@ minuteInHour = 60
 
 secondsInTwoHours = hours * secondsInMinute * minuteInHour
 
-print ("2 hour(s) is", secondsInTwoHours, "seconds")
+print ("2 hour(s) is", secondsInTwoHours, "seconds.")
