@@ -1,7 +1,5 @@
 hours = 2
-secondsInMinute = 60
-minuteInHour = 60
 
-seconds = hours * secondsInMinute * minuteInHour
 
+seconds = hours * 3600
 print ("2 hour(s) is", seconds, "seconds.")
