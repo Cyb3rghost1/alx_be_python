@@ -16,12 +16,17 @@ match priority:
 
 # Add time sensitivity information
 if time_bound == "yes":
-    reminder += " that requires immediate attention today!"
+    if priority == "medium":
+        reminder += " that should be completed within the next few days!"
+    else:
+        reminder += " that requires immediate attention today!"
 else:
     if priority == "low":
         reminder += ". Consider completing it when you have free time."
+    elif priority == "medium":
+        reminder += ". Plan to complete this task soon."
     else:
-        reminder += "."
+        reminder += ". Schedule this in your calendar."
 
 # Display the reminder
 print(reminder)
